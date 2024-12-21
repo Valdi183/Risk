@@ -4,18 +4,22 @@ Genero todas las posibles combinaciones de tropas (las que se observan definidas
 Genero todas las permutaciones posibles del orden a la hora de atacar a los territorios enemigos, respetando la regla que establece que debe haber al menos una
 unidad de cada tropa (al menos una de infanería una de caballería y una de artillería) .
 Al ejecutar el código, está la opción de datos personalizados, dejando al usuario cambiar parametros como: puntos disponibles, fuerza de cada tropa, número de
-territorios enemigos y datos de cada territorio elegido (elegir la fuerza de defensa (int) y el tipo de terreno (str))
+territorios enemigos y datos de cada territorio elegido (elegir la fuerza de defensa (int) y el tipo de terreno (str)).
 Prueba a usar los siguientes datos:
-Puntos disponibles: 20
+Puntos disponibles: 20.
 Fuerzas de las tropas:
-Infantería: 1
-Caballería: 3
-Artillería: 5
-Número de territorios enemigos: 3
+Infantería: 1.
+Caballería: 3.
+Artillería: 5.
+Número de territorios enemigos: 3.
 Datos de los territorios:
-Territorio 1: Defensa = 5, Tipo = plano
-Territorio 2: Defensa = 6, Tipo = montaña
-Territorio 3: Defensa = 4, Tipo = fortaleza
+Territorio 1: Defensa = 5, Tipo = plano.
+Territorio 2: Defensa = 6, Tipo = montaña.
+Territorio 3: Defensa = 4, Tipo = fortaleza.
+El programa además:
+Tiene una restricción, que prioriza los territorios más débiles, atacándolos primero.
+Ordena las tropas en función del tipo de territorio.
+Elige las combinaciones de tropas óptimas, de forma que se maximizan las conquistas con los recursos disponibles.
 """
 from itertools import product, permutations
 
